@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+                                      https://www.doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+    <entity name="App\Model\EventReservation\Event"
+            table="event"
+            repository-class="App\Infrastructure\ORM\Repository\EventRepository">
+        <id name="eventId" type="event_id" column="event_id"/>
+
+        <field name="name" type="string" column="name"/>
+        <field name="slug" type="string" column="slug" unique="true"/>
+        <field name="description" type="text" column="description"/>
+        <field name="image" type="string" column="image"/>
+    </entity>
+</doctrine-mapping>

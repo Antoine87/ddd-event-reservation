@@ -1,0 +1,11 @@
+.form-reservation-name {
+    width: 100%;
+    max-width: 500px;
+    padding: 15px;
+    margin: auto;
+}
+
+.form-reservation-name .required label:after {
+    content: " *";
+    color: #ff0000;
+}

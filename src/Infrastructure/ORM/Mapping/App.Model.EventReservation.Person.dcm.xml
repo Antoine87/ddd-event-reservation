@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+                                      https://www.doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+    <entity name="App\Model\EventReservation\Person" table="person">
+        <id name="id" type="integer" column="id">
+            <generator strategy="AUTO"/>
+        </id>
+
+        <field name="givenName" type="string" column="given_name"/>
+        <field name="familyName" type="string" column="family_name" nullable="true"/>
+        <field name="email" type="string" column="email"/>
+        <field name="telephone" type="string" column="telephone" nullable="true"/>
+    </entity>
+</doctrine-mapping>

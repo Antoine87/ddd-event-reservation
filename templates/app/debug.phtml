@@ -1,0 +1,35 @@
+<?php
+/** @var \Zend\View\Renderer\PhpRenderer $this */
+/** @var \Psr\Container\ContainerInterface $container */
+/** @var \Zend\Expressive\Session\LazySession $session */
+/** @var \Zend\Expressive\Template\TemplateRendererInterface $renderer */
+/** @var \App\UI\Reservation\Command\ReservationCommand $reservation */
+
+$this->headTitle('Reservation');
+?>
+
+<h4>Config</h4>
+<?php dump($config) ?>
+
+<h4>Container</h4>
+<?php dump($container) ?>
+
+<h4>Session</h4>
+<?php dump($session) ?>
+
+<h4>Renderer</h4>
+<?php dump($renderer) ?>
+
+<?php if ($session): ?>
+    <h6>session->toArray</h6>
+    <?php dump($session->toArray()) ?>
+
+    <?php if ($reservation): ?>
+        <h6>ReservationCommand</h6>
+        <?php dump($reservation) ?>
+    <?php endif ?>
+<?php endif ?>
+
+
+<?php if(false): ?>
+<?php endif ?>

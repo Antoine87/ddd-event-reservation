@@ -1,0 +1,35 @@
+<?php
+/** @var \Zend\View\Renderer\PhpRenderer $this */
+/** @var string $selectedEvent */
+
+$this->headTitle('Reservation');
+?>
+<h3><?= $selectedEvent ?></h3>
+<form class="form-reservation-name" method="post" action="<?= $this->url('reservation.submit', ['step' => 'name']) ?>">
+    <div class="text-center mb-4">
+        <h4>Please fill-in the name for the reservation</h4>
+    </div>
+
+    <div class="form-label-group mb-3 required">
+        <label for="givenName">First name</label>
+        <input type="text" id="givenName" name="personGivenName" class="form-control" value="John" required>
+    </div>
+
+    <div class="form-label-group mb-3">
+        <label for="familyName">Last name</label>
+        <input type="text" id="familyName" name="personFamilyName" class="form-control">
+    </div>
+
+    <div class="form-label-group mb-3 required">
+        <label for="familyName">Email</label>
+        <input type="email" id="email" name="personEmail" class="form-control" value="person@email.com" required>
+    </div>
+
+    <div class="form-label-group mb-3">
+        <label for="telephone">Phone number</label>
+        <input type="text" id="telephone" name="personTelephone" class="form-control">
+    </div>
+
+    <hr class="mb-4">
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Reserve</button>
+</form>
