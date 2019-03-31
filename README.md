@@ -40,7 +40,7 @@ $ composer check
 ## File hierarchy
 
 <details>
-  <summary>CLICK ME</summary>
+  <summary>Expand to view the file hierarchy</summary>
 <p>
 
 ![alt text](file-hierarchy.jpg "File hierarchy")
