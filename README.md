@@ -36,3 +36,13 @@ Both coding style and unit tests :
 ```bash
 $ composer check
 ```
+
+## File hierarchy
+
+<details>
+  <summary>CLICK ME</summary>
+<p>
+
+![alt text](file-hierarchy.jpg "File hierarchy")
+
+</details>
